@@ -1,0 +1,8 @@
+Bengt is [a crash pilot] and comes from [a far away land].
+Bengt arrives at the Temple of Tar because [his plane crashed in the deep jungle].
+His goal is to collect all [puzzle pieces] because [ ].
+
+-----Enemies/Traps/etc-----
+
+* Spikes that come out once Bengt is near, then dissapear until a cooldown is reached.
+* 
