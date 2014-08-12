@@ -1,8 +1,0 @@
-Bengt is [a crash pilot] and comes from [a far away land].
-Bengt arrives at the Temple of Tar because [his plane got shot over the deep jungle].
-His goal is to collect all [puzzle pieces] because [they open the door to the next area].
-
------Enemies/Traps/etc-----
-
-* Spikes that come out once Bengt is near, then dissapear until a cooldown is reached.
-* 
