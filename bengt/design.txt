@@ -1,0 +1,12 @@
+The World Within
+
+-----
+
+act 1 (prototype) Bengts Journey:
+
+10 levels + hub + boss room
+
+L0-L8 normal
+L9,L10 hard, secret area
+
+if (all crystals) -> special boss room, special ending
