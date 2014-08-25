@@ -6,7 +6,14 @@ act 1 (prototype) Bengts Journey:
 
 10 levels + hub + boss room
 
+each level has 100 puzzle pieces and 3 crystals
+
 L0-L8 normal
 L9,L10 hard, secret area
 
+L0[theme 1] -> the crossroads (hub)
+L1[theme 0] -> a strange dream (tutorial)
+L2[theme 2] -> a beach of glass (first "real" level)
+
 if (all crystals) -> special boss room, special ending
+else -> "standard" boss/ending
