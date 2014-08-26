@@ -17,3 +17,19 @@ L2[theme 2] -> a beach of glass (first "real" level)
 
 if (all crystals) -> special boss room, special ending
 else -> "standard" boss/ending
+
+-----
+
+SOUND FX:
+
+jump
+hit floor
+collect puzzle
+collect crystal
+bell (goal)
+die
+swim (jump in water)
+bubble pop
+destroy block
+destroy vase
+balloon pop
