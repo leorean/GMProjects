@@ -28,9 +28,16 @@ SOUND FX:
 * collect crystal
 bell (goal)
 * die
-(swim (jump in water))
+* (swim (jump in water))
 destroy block
 * destroy vase
 * balloon pop
 
-hint/speech
+* hint
+* speech
+
+* coin
+dream portal
+level start
+
+WALLJUMP
