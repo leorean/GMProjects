@@ -22,14 +22,16 @@ else -> "standard" boss/ending
 
 SOUND FX:
 
-jump
-hit floor
-collect puzzle
-collect crystal
+* jump
+* hit floor
+* collect puzzle
+* collect crystal
 bell (goal)
-die
-swim (jump in water)
-bubble pop
+* die
+(swim (jump in water))
 destroy block
-destroy vase
-balloon pop
+* destroy vase
+* balloon pop
+
+hint/speech
+splash
