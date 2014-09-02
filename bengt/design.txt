@@ -34,4 +34,3 @@ destroy block
 * balloon pop
 
 hint/speech
-splash
