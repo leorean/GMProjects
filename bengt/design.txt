@@ -38,12 +38,14 @@ SOUND FX:
 
 (orb swoosh new)
 
-dream portal
-level start
 * coin - last one in level
 * crystal sound new (old one for hp)
-crystal - last one in level
-bell (goal)
-hp new sound
+* crystal - last one in level
+* hp new sound
+* 2 more speaking sounds
 
-2 more speaking sounds
+dream portal
+level start
+bell (goal)
+new enemy hit sound
+
