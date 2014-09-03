@@ -45,3 +45,5 @@ level start
 crystal - last one in level
 bell (goal)
 hp new sound
+
+2 more speaking sounds
