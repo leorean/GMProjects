@@ -26,18 +26,22 @@ SOUND FX:
 * hit floor
 * collect puzzle
 * collect crystal
-bell (goal)
 * die
 * (swim (jump in water))
-destroy block
+* destroy block
 * destroy vase
 * balloon pop
-
 * hint
 * speech
-
 * coin
+* walljump
+
+(orb swoosh new)
+
 dream portal
 level start
-
-WALLJUMP
+* coin - last one in level
+* crystal sound new (old one for hp)
+crystal - last one in level
+bell (goal)
+hp new sound
