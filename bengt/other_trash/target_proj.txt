@@ -1,0 +1,130 @@
+
+if (tile_layer_find(WATERDEPTH,x,y) != -1)
+    inWater = true;
+else
+    inWater = false;
+
+if (free)
+{
+    spd = min(spd+.1,maxSpd-(maxSpd*.7*inWater));
+
+    if (!found)
+    {
+        if (try == 0)
+            target = instance_nearest(objPlayer.cx,objPlayer.cy,objLivingEnemy);
+        if (try == 1)
+            target = instance_nearest(objPlayer.orb.cx,objPlayer.orb.cy,objDestroyable);
+        if (try == 2)
+            found = true;
+        
+        //disabled target searching.
+        //target = noone;
+
+        if (target != noone)
+        {
+            tx = target.x+TILE/2;
+            ty = target.y+TILE/2;
+        }
+/*
+        if (abs(x-tx)<dist && abs(y-ty)<dist)
+            && ((dir == LEFT && x > tx+TILE/2)
+            || (dir == RIGHT && x < tx-TILE/2)
+            || (dir == UP && y > ty+TILE/2)
+            || (dir == DOWN && y < ty-TILE/2))
+*/
+        /*if (dir == LEFT && x > tx && x < tx+dist && abs(y-ty)<dist)
+            || (dir == RIGHT && x < tx && x > tx-dist && abs(y-ty)<dist)
+            || (dir == UP && y > ty && y < ty+dist  && abs(x-tx)<dist)
+            || (dir == DOWN && y < ty && y > ty-dist  && abs(x-tx)<dist)
+        {*/
+        if (abs(x-tx)<dist && abs(y-ty)<dist)
+        {
+            if (tx < x) objPlayer.orb.dir = LEFT;
+            if (tx > x) objPlayer.orb.dir = RIGHT;
+            if (objPlayer.orb.look != NONE)
+            {
+                if (ty < y) objPlayer.orb.look = UP;
+                if (ty > y) objPlayer.orb.look = DOWN;
+            }
+            angle = -(point_direction(x,y,tx,ty)-90);            
+            xF = sin(degtorad(angle));
+            yF = -cos(degtorad(angle));
+            dir = NONE;
+            found = true;
+        } else
+        {
+            target = noone;
+            try += 1;
+        }
+        
+    }
+
+} else
+{
+    xVel = objPlayer.orb.xVel;
+    yVel = objPlayer.orb.yVel;
+    x = objPlayer.orb.x+TILE/2;
+    y = objPlayer.orb.y+TILE/2;
+
+    if (objPlayer.orb.att == -1)
+    {
+        if (objPlayer.orb.look == NONE)
+            dir = objPlayer.orb.dir;
+        else
+            dir = objPlayer.orb.look;
+        xVel = 0;
+        yVel = 0;
+
+        free = true;
+    }
+}
+
+
+
+if (alive)
+{
+
+    switch(dir)
+    {
+        
+        case LEFT:
+            xVel = -spd;
+        break;
+        case RIGHT:
+            xVel = spd;
+        break;
+        case UP:
+            yVel = -spd;
+        break;
+        case DOWN:
+            yVel = spd;
+        break;
+        case NONE:
+            xVel = xF*spd;
+            yVel = yF*spd;
+        break;
+    }
+
+    db = instance_place(x,y,objDestroyBlock);
+    if (db != noone)
+    {
+        db.alive = false;
+        pop = true;
+    }
+
+    if (pop || (free && place_meeting(x,y,objSolid)) || place_meeting(x,y,objTar))
+    {
+        t = instance_create(x,y,objProjectilePop);
+        t.type = 0;
+
+        //star effect only if hit living enemies
+        if (!place_meeting(x,y,objSolid) && !place_meeting(x,y,objDestroyBlock))
+            repeat(3)
+                instance_create(x,y,objParticleHurt);
+        
+        instance_destroy();
+    }
+}
+
+x += xVel;
+y += yVel;
