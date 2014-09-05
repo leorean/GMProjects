@@ -49,7 +49,8 @@ level start
 bell (goal)
 new enemy hit sound
 toggleTarget sounds:
-	lockOn
-	lockOff
-	lockChange
+	lockOn - if locked off and something is found
+	lockOff - if orb is too far away
+	lockChange - changes target if already locked on
+	lockNothing - if nothing is found nearby
 
