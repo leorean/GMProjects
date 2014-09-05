@@ -48,9 +48,11 @@ dream portal
 level start
 bell (goal)
 new enemy hit sound
-toggleTarget sounds:
+
+better toggleTarget sounds
 	lockOn - if locked off and something is found
 	lockOff - if orb is too far away
-	lockChange - changes target if already locked on
+	lockNext - changes target if already locked on
 	lockNothing - if nothing is found nearby
+
 
