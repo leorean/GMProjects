@@ -55,4 +55,8 @@ better toggleTarget sounds
 	lockNext - changes target if already locked on
 	lockNothing - if nothing is found nearby
 
+-----
 
+jump sound neu
+lockNothing neu
+orb tx und ty gleich in objPlayerStep setzen
