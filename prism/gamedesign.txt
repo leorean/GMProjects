@@ -1,0 +1,22 @@
+* holes if no floor tile
+* blocks
+* halfblocks (can't pass, but projectiles can)
+
+* items
+(use scroll wheel or item icon bar to change current item)
+	** projectile
+	** boomerang
+	** lance (can pierce through multi enemies)
+	** hammer (can create shockwave)
+	** 
+
+* mouse cursor gets object on click
+for example, npc, treasure, etc..
+
+
+
+
+
+
+* sorcery system:
+projectiles have: speed, delay, power, multi-hit, ...
