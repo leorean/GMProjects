@@ -13,6 +13,9 @@
 * mouse cursor gets object on click
 for example, npc, treasure, etc..
 
+overall concept:
+
+dungeon crawler vs. story based vs. ... ?
 
 
 
