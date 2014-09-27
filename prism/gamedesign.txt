@@ -1,3 +1,12 @@
+
+
+principles:
+
+stranded near cave
+in cave (randomized): find random item of tier 1 (sword L1, lance L1, etc)
+
+
+
 * holes if no floor tile
 * blocks
 * halfblocks (can't pass, but projectiles can)
@@ -16,8 +25,6 @@ for example, npc, treasure, etc..
 overall concept:
 
 dungeon crawler vs. story based vs. ... ?
-
-
 
 
 
