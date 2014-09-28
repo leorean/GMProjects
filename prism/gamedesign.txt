@@ -1,11 +1,29 @@
+--------------
 
 
-principles:
-
-stranded near cave
-in cave (randomized): find random item of tier 1 (sword L1, lance L1, etc)
 
 
+--------------
+Gameplay:
+
+beekeeping
+
+* plant new beehives
+* collect bees from tree-beehives
+* grow flowers
+* bees feed on flowers (and pollenise them, so they drop seeds when they wither)
+* bees also feed on sugarwater (but it is expensive) or tree sap
+* your only way to make income is to sell honey
+* create honey by extracting it 
+* you might have to get and upgrade certain tools and goods: 
+	* imker suit (bees can't hurt you anymore)
+	* honey extractor (gets the honey out of the combs)
+	* bee net (can catch bees)
+	* pheromones (can attach bees to a new hive)
+	
+	TODO
+
+-------------
 
 * holes if no floor tile
 * blocks
