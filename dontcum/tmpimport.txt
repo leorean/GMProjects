@@ -1,0 +1,38 @@
+//file = argument0;
+
+ds = ds_grid_create(WIDTH/TILE,HEIGHT/TILE);
+ds_grid_clear(ds,0);
+
+file = file_text_open_read(argument0);
+
+var hl, f;
+hl = false;
+
+repeat(50)
+{
+    f = file_text_read_string(file);
+    if (string(f) == string("data="))
+    {
+        hl = true;
+        file_text_readln(file);
+        break;
+    }
+
+    file_text_readln(file);
+}
+if(!hl)
+    return "ERROR";
+
+
+for (j = 0; j < HEIGHT/TILE; j+= 1)
+{
+    f = file_text_read_string(file);
+    for (i = 0; i < WIDTH/TILE; i+= 1)
+    {
+        ds_grid_add(ds,i,j,string_char_at(f,1+(i*2)));
+    }
+    file_text_readln(file);
+}
+
+file_text_close(file);
+return ds;
